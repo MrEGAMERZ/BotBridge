@@ -1,0 +1,5 @@
+node_modules/
+build/
+shared_state.json
+.DS_Store
+.env
