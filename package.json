@@ -1,13 +1,17 @@
 {
   "name": "botbridge",
-  "version": "1.0.0",
-  "description": "BotBridge MCP Pairing Server",
+  "version": "1.0.1",
+  "description": "BotBridge MCP Pairing Server for Multi-Agent Collaboration",
   "main": "build/index.js",
+  "bin": {
+    "botbridge": "build/index.js"
+  },
   "type": "module",
   "scripts": {
     "build": "tsc",
     "start": "node build/index.js",
-    "dev": "ts-node-esm src/index.ts"
+    "dev": "ts-node-esm src/index.ts",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.1"
@@ -16,5 +20,7 @@
     "@types/node": "^20.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.0.0"
-  }
+  },
+  "keywords": ["mcp", "agents", "grok", "multi-agent", "botbridge", "collaboration"],
+  "author": "MrEGAMERZ"
 }
