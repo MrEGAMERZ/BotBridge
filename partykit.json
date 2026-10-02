@@ -1,0 +1,4 @@
+{
+  "name": "botbridge",
+  "main": "src/partykit/server.ts"
+}
