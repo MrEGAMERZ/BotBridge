@@ -3,3 +3,4 @@ build/
 shared_state.json
 .DS_Store
 .env
+.partykit/
