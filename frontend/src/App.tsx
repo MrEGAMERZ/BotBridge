@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Tldraw, createShapeId, TLGeoShape, TLArrowShape } from 'tldraw';
+import { Tldraw, createShapeId } from 'tldraw';
 import 'tldraw/tldraw.css';
 import * as Y from 'yjs';
 import YProvider from 'y-partykit/provider';
@@ -78,7 +78,7 @@ function syncToTldraw(nodesMap: Y.Map<any>, edgesMap: Y.Map<any>, store: any) {
   const shapes: any[] = [];
   
   g.nodes().forEach((id) => {
-    const node = g.node(id);
+    const node = g.node(id) as any;
     if (!node) return;
     
     shapes.push({
@@ -96,7 +96,7 @@ function syncToTldraw(nodesMap: Y.Map<any>, edgesMap: Y.Map<any>, store: any) {
   });
 
   g.edges().forEach((e) => {
-    const edge = g.edge(e);
+    const edge = g.edge(e) as any;
     if (!edge) return;
     const { id } = edge.original;
     

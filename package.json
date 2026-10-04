@@ -1,7 +1,7 @@
 {
   "name": "botbridge",
   "version": "1.0.1",
-  "description": "BotBridge MCP Pairing Server for Multi-Agent Collaboration",
+  "description": "BotBridge: A real-time Model Context Protocol (MCP) bridge for multi-agent collaboration.",
   "main": "build/index.js",
   "bin": {
     "botbridge": "build/index.js"
@@ -35,5 +35,10 @@
     "botbridge",
     "collaboration"
   ],
-  "author": "MrEGAMERZ"
+  "author": "MrEGAMERZ",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrEGAMERZ/BotBridge.git"
+  },
+  "license": "MIT"
 }
